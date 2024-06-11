@@ -1,12 +1,7 @@
-const express = require("express");
-const router = express.Router();
+const comments = require('../data/comments');
 
-router.get("/comments", (res) => {
-  res.send("comments.js");
-});
-
-const list = (res) => {
-  res.json(list)
+const list = (req, res) => {
+  res.json(comments)
 }
 
 const show = (req, res) => {

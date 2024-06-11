@@ -1,11 +1,6 @@
-const express = require("express");
-const router = express.Router();
+const vehicles = require('../data/vehicles');
 
-router.get("/vehicles", (res) => {
-  res.send("vehicles.js");
-});
-
-const list = (res) => {
+const list = (req, res) => {
   res.json(vehicles);
 }
 
